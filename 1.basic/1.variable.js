@@ -9,4 +9,8 @@ let user_name
 
 //const 상수 선언, 초기값까지 줘야한다.
 const x = 1
-x = 2
+//x = 2
+
+let y
+y = 1
+y
