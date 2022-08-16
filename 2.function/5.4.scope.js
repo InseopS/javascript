@@ -2,7 +2,7 @@
 let name = 'neo'
 sayHi()
 
-// function은 라인과 상관없이 로드와 함께 준비가 된다.
+// function declaration은 라인과 상관없이 로드와 함께 준비가 된다.
 function sayHi() {
     console.log('hi,', name)
 }
