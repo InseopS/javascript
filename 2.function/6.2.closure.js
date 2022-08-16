@@ -22,6 +22,4 @@ function init() {
 }
 init()
 // sayAge() // ReferenceError: sayAge is not defined
-
-// sayAge() // ReferenceError: sayAge is not defined
 // tellAge() // ReferenceError: tellAge is not defined
