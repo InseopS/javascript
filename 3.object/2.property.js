@@ -66,4 +66,5 @@ user = undefined
 //
 user = {}
 // user.greet()
+// user에 greet method가 있으면 call 한다.
 console.log(user.greet?.())
