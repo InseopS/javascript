@@ -35,4 +35,5 @@ user2 = {
 user1.greet()
 
 // 과제: user1.greet 을 이용해서, I am colin. 을 출력하라.
+// call은 주어 함수를 불러온다.
 user1.greet.call(user2)
