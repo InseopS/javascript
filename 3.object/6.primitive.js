@@ -7,6 +7,7 @@ let user = {
     name: 'amanda',
     age: 20,
     // symbol 타입의 key는 []를 써야한다.
+    // Symbol.toPrimitive() parameter를 기본타입으로 변환해준다.
     [Symbol.toPrimitive](hint) {
         return hint == 'string' ? this.name : this.age
     }
