@@ -1,6 +1,6 @@
 // 객체에는 숨겨진 prototype property가 있다.
-// 생성자는 객체가 하나 자동생성 되는데 prototype이 해당객체의 주소값을 가진다.
-// 해당 prototype 객체에 있는 constuctor 속성의 주소값은 생성자의 주소값을 가진다.
+// 생성자는 객체가 하나 자동생성 되는데 prototype이 해당객체의 주소값을 참조한다.
+// 해당 prototype 객체에 있는 constuctor 속성의 주소값은 생성자의 주소값을 참조한다.
 
 let animal = {
     isAlive: true
@@ -22,6 +22,7 @@ console.log(20, Rabbit.prototype.constructor)
 rabbit2 = new Rabbit('white')
 console.log(rabbit2.isAlive)
 console.log(24, rabbit2.__proto__.constructor)
+console.log(Rabbit.prototype.constructor == rabbit2.__proto__.constructor)
 console.log(25, rabbit1.__proto__.constructor)
 
 //

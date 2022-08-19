@@ -1,8 +1,8 @@
 let user = {
-name: 'madonna',
-greet() {
-    console.log(`I am ${this.name}.`)
-}
+    name: 'madonna',
+    greet() {
+        console.log(`I am ${this.name}.`)
+    }
 }
 
 user.greet()
