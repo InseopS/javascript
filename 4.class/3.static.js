@@ -22,6 +22,9 @@ class Article {
         return hint == 'number' ? this.viewCnt : this.title
     }
 }
+// 참고내용, + 연산자는 피연산자의 자료형에 따라 리턴이 달라 hint는 default다.
+// https://leesoo7595.github.io/javascript/2020/06/05/JavaScript_toPrimitive/
+
 // static.변수명으로 바로 접근
 console.log(26, Article.publiser)
 
