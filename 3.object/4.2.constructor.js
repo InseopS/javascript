@@ -8,11 +8,11 @@ this.fire = () => gun.fire()
 }
 
 let gun = new Gun()
-let Shooter1 = new Shooter('최한석', gun)
-let Shooter2 = new Shooter('한아름', gun)
+let shooter1 = new Shooter('최한석', gun)
+let shooter2 = new Shooter('한아름', gun)
 
-Shooter1.fire()
-Shooter2.fire()
+shooter1.fire()
+shooter2.fire()
 
 //
 function Ball() {}
