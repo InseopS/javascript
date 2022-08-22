@@ -18,7 +18,7 @@ user.introduce()
 
 //
 User = class {
-    name // class field
+    name // property
     age
     constructor(name, age) {
         this.name = name
