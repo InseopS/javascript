@@ -13,28 +13,33 @@ let user = new User('john')
 console.log(13, user.name)
 user.introduce()
 
+// [[isClassConstructor]]: true
+// User('john') // TypeError: Class constructor User cannot be invoked without 'new'
+
 //
 User = class {
-    name
+    name // class field
     age
-
     constructor(name, age) {
         this.name = name
         this.age = age
     }
 
     introduce() {
-        console.log(27, `${this.name} / ${this.age}`)
+        console.log(30, `${this.name} / ${this.age}`)
     }
 }
 
-new User('abel', 12).introduce()
+user = new User('abel', 12)
+user.introduce()
+console.log(36, user.name)
+console.log(37, User.prototype.name)
 
 //
 function makeClass(phase) {
     return class {
         sayHi() {
-            console.log(37, phase)
+            console.log(43, phase)
         }
     }
 }
