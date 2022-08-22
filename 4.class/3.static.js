@@ -49,7 +49,18 @@ console.log(47, article1 + '')
 // static 변수는 클래스에 저장돼있다.
 console.log(50, article1.publiser, article1.address, article1.compare)
 console.log(51, Article.title, Article.viewCnt)
-console.log(52, Object.keys(article1))
-console.log(53, Object.keys(Article))
-for(let key in Article) console.log(54, key)
 // static method compare는 조회가 안된다.
+console.log(53, Object.keys(Article))
+console.log(54, Article.prototype)
+console.log(55, Object.keys(article1))
+
+//
+let articles = [article1, article2]
+console.log(59, articles)
+// 오름차순 정렬 (a - b)
+articles.sort(Article.compare)
+console.log(62, articles)
+// 내림차순 정렬 (b - a)
+Article.compare = (a, b) => b - a
+articles.sort(Article.compare)
+console.log(66, articles)
