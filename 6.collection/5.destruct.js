@@ -95,3 +95,27 @@ let bread = {
 
 // 과제: bread에서 size와 items를 뽑아내라.
 let {size, items} = bread
+console.log(98, size, items)
+
+//
+let {
+    size: {
+        width: w2,
+        height: h2
+    },
+    items: [item1, item2]
+} = bread
+console.log(108, w2, h2, item1, item2)
+
+//
+let menu = {
+    title: 'menu',
+    items: ['list','add'],
+    expired: 10
+}
+
+function showMenu({title: name, items: [item1, item2]}) {
+    console.log(118, name, item1, item2)
+}
+
+showMenu(menu)
