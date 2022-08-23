@@ -14,7 +14,7 @@ console.log(13, arr[1])
 
 console.log(15, arr.length)
 
-//
+// 행, 열이 같아야 matrix다.
 let matrix = [
     [1, 2],
     [3, 4]
@@ -89,6 +89,62 @@ for(let i = 0; i < arr.length; i++)
 for(let key in arr) console.log(89, arr[key])
 // of를 사용하면 val을 불러온다.
 for(let val of arr) console.log(89, (val))
-// arr.forEach(a => {
-//     console.log(a)
-// })
+
+//
+function print(e) {
+    console.log(95, e)
+}
+
+function print2(e, i) {
+    console.log(99, `[${i}]: ${e}`)
+}
+
+function print3(e, i, arr) {
+    arr[i] = e.toUpperCase()
+}
+
+arr = ['a', 'b']
+
+arr.forEach(print)
+
+arr.forEach(print2)
+console.log(111, arr)
+
+arr.forEach(print3)
+console.log(114, arr)
+
+// map 기존 배열을 읽고 리턴한다.
+arr = [1, 2, 3]
+let arr2 = arr.map(e => e * 2)
+console.log(119, arr, arr2)
+
+//
+let group = {
+    title: 'art',
+    students: ['winston', 'cal', 'maritha'],
+    list() {
+        this.students.forEach(studentName =>
+            console.log(127, this.title, ':', studentName))
+    }
+}
+
+group.list()
+
+// 합쳐진 데이터 조각 하나를 token이라고 부른다.
+arr = ['hello', 'world', 2]
+let greeting = arr.join()
+console.log(136, greeting)
+console.log(137, typeof greeting)
+
+console.log(139, arr.join('/'))
+//과제: arr.join()에서 'helloworld2'를 return 하라.
+console.log(140, arr.join(''))
+
+//
+arr = [1, 2, 3]
+str = arr.toString()
+console.log(146, str, '/', typeof str)
+
+//
+str = JSON.stringify(arr)
+console.log(150, str, '/', typeof str)
