@@ -1,4 +1,3 @@
-// serializing
 let user = {
     name: 'kelly',
     age: 30,
@@ -6,7 +5,7 @@ let user = {
     courses: ['html', 'css'],
     wife: null
 }
-
+// serializing
 let json = JSON.stringify(user)
 console.log(10, json)
 
