@@ -15,7 +15,9 @@ const profile: Profile = {
 }
 
 printUsername(profile)
-console.log(typeof profile)
+console.log(18, typeof profile)
+
+
 interface Relationship {
     from: Profile
     to: Profile
@@ -33,7 +35,6 @@ const relationship: Relationship = {
         nickname: 'warrior'
     }
 }
-
 
 // 
 interface Account extends Profile {
@@ -68,7 +69,7 @@ user = {
     photoUri: 'face.jpg'
 }
 
-console.log(71, user)
+console.log(72, user)
 
 //
 interface Shape {
@@ -103,4 +104,4 @@ class Circle implements Shape {
  const circle = new Circle(4)
  const rectangle = new Rectangle(4, 6)
 
- console.log(106, circle.getArea(), rectangle.getPerimeter())
+ console.log(107, circle.getArea(), rectangle.getPerimeter())
