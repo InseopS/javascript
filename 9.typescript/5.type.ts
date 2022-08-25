@@ -16,7 +16,7 @@ type Color = 'red' | 'green' | 'blue'
 let color: Color = 'red'
 // color = 'yellow'
 
-//
+// merge(병합)
 type Employee = Man & {
     job: string
 }
